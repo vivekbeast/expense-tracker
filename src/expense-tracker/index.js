@@ -160,7 +160,7 @@ export const ExpenseTracker = () =>{
                 <li key={index} className="bg-white p-4 mb-4 rounded shadow-md">
                     <h4 className="text-lg font-semibold">{transaction.description}</h4>
                     <p className={`text-${transaction.transactionType === "expense" ? "red" : "green"}-600`}>
-                        ₹ {transaction.transactionAmount} =>>
+                        ₹ {transaction.transactionAmount} ==
                         <label>{transaction.transactionType.charAt(0).toUpperCase() + transaction.transactionType.slice(1)}</label>
                     </p>
                 </li>
